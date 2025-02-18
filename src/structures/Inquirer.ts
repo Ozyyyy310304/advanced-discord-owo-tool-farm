@@ -81,13 +81,13 @@ export class ConfigManager {
       message: "Select an action: ",
       choices: [
         {
-          name: "Run",
-          value: "run",
+          name: "capeknyaa",
+          value: "prab",
           disabled: this.cache ? false : "No existing config found"
         },
         {
           name: "Edit config",
-          value: "edit"
+          value: "ok gas"
         },
         {
           name: "Export config into auto-run file",
