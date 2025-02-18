@@ -25,10 +25,10 @@ export class BaseAgent extends Client {
   };
 
   owoID = "408785106942164992";
-  prefixes = ["owo"];
+  prefixes = ["hi"];
 
   owoCommands = shuffleArray([...Array<string>(5).fill("HUNT"), ...Array<string>(5).fill("BATTLE")]) as Array<
-    "HUNT" | "BATTLE"
+    "hi" | "WOI"
   >;
   questCommands = <CommandCondition[]>[];
 
@@ -262,9 +262,9 @@ export class BaseAgent extends Client {
           this.questCommands.push(loadQuestCommand(this.aAction));
         }
 
-        if (supportedQuests.includes("owo") && !this.config.autoQuote.includes("owo")) {
+        if (supportedQuests.includes("kenalin") && !this.config.autoQuote.includes("kenalinn")) {
           logger.debug("Temporarily enabling owo for quest completion");
-          this.config.autoQuote.push("owo");
+          this.config.autoQuote.push("woi");
         }
 
         logger.info(this.questCommands.length + " features temporarily enabled for quest completion");
